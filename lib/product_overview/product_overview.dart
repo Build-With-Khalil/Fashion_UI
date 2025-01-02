@@ -24,7 +24,7 @@ class ProductOverView extends StatelessWidget {
         height: double.infinity,
         decoration: BoxDecoration(
           image: DecorationImage(
-            fit: BoxFit.cover,
+            fit: BoxFit.fitHeight,
             image: AssetImage(image),
           ),
         ),
@@ -123,11 +123,12 @@ class ProductOverView extends StatelessWidget {
                                         borderRadius: BorderRadius.only(
                                           bottomRight: Radius.circular(30),
                                           topLeft: Radius.circular(30),
-                                          topRight:   Radius.circular(30),
+                                          topRight: Radius.circular(30),
                                         ),
                                       ),
                                       child: const Row(
-                                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceEvenly,
                                         children: <Widget>[
                                           Text(
                                             "Follow",
@@ -136,8 +137,10 @@ class ProductOverView extends StatelessWidget {
                                               fontWeight: FontWeight.bold,
                                             ),
                                           ),
-                                          Icon(Icons.add_circle,color: Colors.white,)
-
+                                          Icon(
+                                            Icons.add_circle,
+                                            color: Colors.white,
+                                          )
                                         ],
                                       ),
                                     ),

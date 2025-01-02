@@ -16,7 +16,10 @@ class HomePage extends StatelessWidget {
         elevation: 0,
         iconTheme: const IconThemeData(color: Colors.black),
         actions: const [
-          Icon(Icons.search),
+          Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Icon(Icons.search),
+          ),
         ],
       ),
       body: Column(
